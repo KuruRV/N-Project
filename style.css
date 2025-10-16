@@ -1,0 +1,72 @@
+/* Root color variables */
+:root {
+    --red: #e50914;
+}
+
+/* Reset default margin, padding, and set box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Background image with dark overlay */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/bgroundhome.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+
+/* Center content vertically and horizontally */
+.center-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+/* Style the button */
+.center-btn {
+    padding: 1em 2em;
+    font-size: 1.2em;
+    background-color: var(--red);
+    color: #fff;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    margin-top: 1em;
+    text-decoration: none;
+    transition: background 0.3s;
+    display: inline-block;
+}
+
+.center-btn:hover {
+    background-color: #b0060f;
+}
+
+/* Logo/header styles */
+header {
+    width: 100%;
+    padding: 2em 0 0 2em; /* Add left padding */
+    text-align: left;      /* Align text to the left */
+    position: absolute;    /* Position at the top */
+    top: 0;
+    left: 0;
+}
+
+header .logo {
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}

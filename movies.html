@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Netflix Project</title>
+    <!-- Linking external CSS for styling -->
+    <link rel="stylesheet" href="movies.css">
+    <!-- Linking Font Awesome for icon support -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Header section: contains logo and navigation links -->
+    <header> 
+        <div class="container">
+            <!-- Netflix Project logo -->
+            <h2 class="logo">Netflix Project</h2>
+            <!-- Navigation bar for site sections -->
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="movies.html" class="active">Movies</a>
+                <a href="tvshows.html">TV Shows</a>
+                <a href="#">Recently Added</a>
+                <a href="#">My List</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content section -->
+    <main> 
+        <!-- Feature film banner with background image and info -->
+        <div class="feature-film">
+            <div class="container">
+                <!-- Movie title -->
+                <h3 class="title">Interstellar</h3>
+                <!-- Movie description -->
+                <p class="description">
+                    Set in a near-future Earth plagued by environmental collapse—dust storms, crop failures, and famine—the story follows Cooper, a former NASA pilot turned farmer, who is recruited for a daring mission through a wormhole near Saturn. The goal: find a new habitable planet to save humanity from extinction
+                </p>
+                <!-- Watch Now button with play icon -->
+                <button role="button" class="btn-primary"> <i class="fa-solid fa-play"></i>Watch Now</button>
+                <!-- More Info button with info icon -->
+                <button role="button" class="btn-secondary"><i class="fa-solid fa-circle-info"></i>More Info</button>
+            </div>
+        </div>
+
+        <div class="recommended-movies container">
+            <div class="container-title-controls">
+                <!-- Section title for recommended movies -->
+                <h3 class="s">Recommended Movies</h3>
+                <div class="indicators"></div>
+                </div>
+
+                <div class="main-container">
+                    <button role="button" id="left-arrow" class="left-arrow"> <i class="fa-solid fa-angle-left"></i></button>
+
+
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <div class="movies">
+                                <a href="#"> <img src="img/carrom1.png" alt="description" width="200px" </a>
+                            </div>
+                            <div class="movies">
+                                <a href="#"> <img src="img/carrom2.png" alt="description" width="200px" </a>
+                            </div>
+                            <div class="movies">
+                                <a href="#"> <img src="img/carrom3.png" alt="description" width="200px" </a>
+                            </div>
+                            <div class="movies">
+                                <a href="#"> <img src="img/carrom4.png" alt="description" width="200px" </a>
+                            </div>
+                            <div class="movies">
+                                <a href="#"> <img src="img/carrom5.png" alt="description" width="200px" </a>
+                            </div>
+                            <div class="movies">
+                                <a href="#"> <img src="img/carrom6.png" alt="description" width="200px" </a>
+                            </div>
+                            <div class="movies">
+                                <a href="#"> <img src="img/carrom7.png" alt="description" width="200px" </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button role="button" id="right-arrow" class="right-arrow"> <i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+    </main>
+</body>
+</html>
